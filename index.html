@@ -15,14 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    
  </head>
 
 
 <body>
     <header>
         <nav>
-            <input id="menucheck" type="checkbox">
+            
+            <input class="input" id="menucheck" type="checkbox">
             <label class="burger" for="menucheck">
                 <div class="menu">
                     <i class="fa-solid fa-bars"></i>
@@ -37,12 +38,49 @@
                     <img src="images/logobig.png" width="100px" alt="">
                 </div>
                 
-                <ul>
-                    <li> <a href="">Indoor Plants</a> </li>
-                    <li> <a href="">outdoor Plants</a> </li>
-                    <li> <a href="">Accessories</a> </li>
-                    <li> <a href="">Care</a> </li>
-                    <li> <a href="">App</a> </li>
+                <ul class="mainlist">
+                    <input class="input"  type="checkbox" name="mainli" id="mainli">
+                    <label for="mainli">
+                    <li class="mainlistitem">Indoor Plants<i class="fa-solid fa-angle-down"></i>
+                        </li></label>
+                    
+                    
+                   
+                       
+                                 <ul class="firstmenubar subul">
+                                    <input class="input"  type="checkbox" name="subli" id="subli">
+                                    <label for="subli">
+                                  <li id="subli" class="subli"> Types <i class="fa-solid fa-greater-than"></i></li>
+                                  </label>
+                                  <div  class="thirdmenu">
+                                  <ul>
+                                    <li class="indoor">Indoor Plants</li>
+                                    <label for="subli">
+                                        <li class="subli" id="subli">  <i class=" smaller fa-solid fa-greater-than"></i>Types</li>
+                                        </label>
+                                        <div class="therestli">
+                                         <li>Palms</li>
+                                         <li>Aroid</li>
+                                         <li>Fern</li>
+                                         <li>Cacti</li>
+                                         <li>All</li>
+                                      </div>
+                
+                                    
+                                  </ul>
+                                </div>
+
+
+                                  <li class="subli"> Plant Finder </li>
+                                  <li class="subli"> Bundle and save </li>
+                                  <li class="subli"> Popular</li>
+                                  <li class="subli"><a href="allplants.html">All plants</a> </li>
+                                 </ul>
+                                </li>
+                    <li class="mainlistitem"> outdoor Plants </li>
+                    <li class="mainlistitem">Accessories</li>
+                    <li class="mainlistitem"> Care </li>
+                    <li class="mainlistitem"> App </li>
                 </ul>
             </div>
             
@@ -50,69 +88,127 @@
 
 
             <div class="logo">
-                <img src="images/logofull.png" width="200px" alt="">
+                <a href="index.html"> <img src="images/logofull.png" width="200px" alt=""></a> 
             </div>
 
 
             <div class="search">
+                <input class="input"  type="checkbox" id="search">
+                <label for="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-
-
-            
-        </nav>
-        <div class="headersection">
-            <div class="max-w-2xl mx-auto">
-
-                <div id="default-carousel" class="relative" data-carousel="static">
-                 
-                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-                       
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
-                            <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                        </div>
-                       
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                        </div>
-                       
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    </div>
-                   
-                    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                            <span class="hidden">Anterior</span>
-                        </span>
-                    </button>
-                    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            <span class="hidden">Siguiente</span>
-                        </span>
-                    </button>
+                </label>
+                <div  class="blankk">
+           
+                    <input class="textsearch" type="text" placeholder="Search by Plant name">
+                
                 </div>
-            
-                <p class="mt-5">Este slide carousel se ha hecho con Tailwindcss
-                </p>
-                <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+                
             </div>
-        </div>
+        
+        </nav>
+       
+       
        
 
     </header>
+    <main>
+        <h1 class="ilker">Popular picks:</h1>
+        <section class="section0">
+             
+            
+            
+            <div class="div1">
+                <img src="https://plantsome.com/cdn/shop/products/CalatheaOrnata4inpot_c5ee11a3-b275-4525-8890-e73a8bff8b83_500x400@2x.png?v=1684458057">
+                <div class="infogrid"><a href="">Willie</a> </div>
+            </div>
+            <div class="div2">
+                <img src="https://plantsome.com/cdn/shop/products/PearlsandJadePothos4inpot_df87a8d1-fec3-4ba6-a921-ccdc27bd4999_500x400@2x.png?v=1687284499" alt="">
+                <div class="infogrid"> <a href="">Aurora</a> </div>
+            </div>
+            <div class="div3">
+                <img src="https://plantsome.com/cdn/shop/products/Calatheaunkown2boule_bc0561eb-de39-42b6-8fd8-0323e951c7a2_500x400@2x.png?v=1684458664" alt="">
+                <div class="infogrid"> <a href="">Jessica</a> </div>
+            </div>
+            <div class="div4">
+                <img src="https://plantsome.com/cdn/shop/products/MonsteraDeliciosa6inpot_500x400@2x.png?v=1687972878" alt="">
+                <div class="infogrid"> <a href="">Alfredo</a> </div>
+            </div>
+        
+        </section>
+
+
+
+        <!-- ........................................ -->
+        <section class="section1">
+            <h1>
+                Why should you download <br> our app?
+            </h1>
+            <p class="boldpp"> Well, here are some compelling reasons:</p>
+            <div class="greendiv1">
+                <i class="fa-solid fa-leaf"></i>
+                <p>Convenience at your Fingertips: With <a href="">our app</a>  <br>, you have the convenience of browsing and exploring a wide selection of plants anytime and anywhere. </p>
+
+            </div>
+            <div class="greendiv2">
+                <i class="fa-brands fa-guilded"></i>
+                <p>Expert Guidance and Personalized Recommendations: <a href="">Our app </a> <br> provides valuable insights and expert advice on plant care</p>
+            </div>
+            <div class="greendiv3">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Effortless Ordering Process with <a href="">Our app </a> : <br> Ordering plants has never been easier. With just a few taps, you can select your desired plants</p>
+            </div>
+            <div class="greendiv4"> 
+                <i class="fa-solid fa-group-arrows-rotate"></i>
+                <p>Engaging Community and Inspiration: <br> Connect with a community of like-minded plant enthusiasts within <a href="">our app </a> </p>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="grid">
+                <div class="halflogo">
+                
+                </div>
+               
+                    <h1 class="mission">Our Mission :</h1>
+                    <p class="missionp" >
+                        Plants are green but so is our mission! Plantsome is setting out to turn homes and offices into urban jungles using only the highest quality <br> tropical plants hand picked by the Plantsome team. And <br> our green mission doesn't end there. Our business processes are optimized to reduce our carbon footprint, too!
+                    </p>
+               
+               
+                <input class="input"  class="checkbox" type="checkbox">
+                
+                 <button class=" firstbutton buttonmission">
+                   <em> Read more about aour mission</em>
+                 </button>
+            </div>
+            
+            <div class="imageman">
+                <img alt="axel" data-src="//plantsome.com/cdn/shop/t/4/assets/foto-axel.png?v=170070426770668293311685090901" class="media__picture ls-is-cached lazyloaded" src="//plantsome.com/cdn/shop/t/4/assets/foto-axel.png?v=170070426770668293311685090901" width="100%">
+                <div class="blank"></div>
+                <div class="imginfo">
+                <h2>Our plant finder makes it real easy</h2>
+                <p>Ready to transform your home to an urban jungle filled with green amigos? Our plant finder helps you pick plants that are perfect for you.</p>
+                <button class="buttonmission">SOUNDS GOOD, LET'S GO!</button>
+                </div>
+            </div>
+
+            <div class="imageman">
+                <img data-src="//plantsome.com/cdn/shop/t/4/assets/thom_yucca.png?v=105078622772735479921685090902" class=" lazyloaded" alt="thom-yucca" src="//plantsome.com/cdn/shop/t/4/assets/thom_yucca.png?v=105078622772735479921685090902">
+                <!-- <div class="blank"></div> -->
+                <div class="imginfo">
+                <h2>thom-yucca
+                    From the nursery to your home.</h2>
+                <p>At Plantsome we get our plants fresh from our nurseries multiple times a week. We only work with the very best! Our team of expert plant care specialists take great care to make sure your plants are healthy and thriving when they arrive at your doorstep. Plants are usually only in our care for a few days. This is how we can guarantee only the best quality plants for your home. And in the end that is what matters!</p>
+                
+                </div>
+            </div>
+            
+            
+           
+
+        </section>
+    </main>
     
 </body>
 </html>
-<script type="module" src="script.js"></script>
+
   
