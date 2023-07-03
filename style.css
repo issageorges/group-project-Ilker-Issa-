@@ -10,12 +10,256 @@ body{
     background-size: cover;
 
 }
-nav{
-    width: 100%;
-    height: 12vh;
-    background-color:#E5E1E1;
+  .main-content {
     position: relative;
-    padding: 0 20px 0 20px;
+    /* display: flex; */
+  }
+
+  .duration-700 { 
+
+    filter:sepia(0.2);
+    
+  }
+
+  .main-content h2 {
+    /* position: absolute; */
+    /* align-self: center; */
+    /* left: 18px; */
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* color: #ebf3eb; */
+    color: #000000;
+    margin-top: 28px;
+    /* text-shadow: 3px 3px rgb(48, 96, 0); */
+    
+  }
+
+  .trans h2 {
+    text-align: center;   
+   
+     }
+  
+
+  .main-content p {
+    color: #e9e9e9;
+    font-size: 30px;
+    font-weight: bolder;
+    justify-content: center;
+    text-align:center;
+    text-shadow: 2px 2px rgb(48, 96, 0);
+  }
+
+  .info1  {
+width: 100%;
+height: 20vh;
+box-sizing: border-box;
+border-radius: 5px;
+background-image: url(./images/info2.jpeg);
+color: #000000;
+text-align: left;
+background-size: cover;
+margin-top: 20px;
+
+  }
+
+
+  .info2  {
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: url(./images/info1.jpeg);
+    background-size: cover;
+    color: #000000;
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 20px;
+      }
+
+    /* .info1 h4, .info2 h4, .info1 p, .info2 p{
+        background-color: rgba(31, 116, 66, 0.3);
+      }
+
+      */
+
+    .info1-text {
+      width: 60%;
+      height: 90%;
+      padding-left: 20px;
+      
+    }
+
+    .info2-text {
+      width: 80%;
+      padding-bottom: 10px;
+    }
+
+    .info1 p {
+  color: #87ab69;
+  font-weight: 500;
+    }
+
+    .info2-text p {
+      color: whitesmoke;
+    }
+
+    .info1 h4, .info2 h4 {
+color: #000000;
+text-align: center;
+padding-top: 10px;
+font-weight: bolder;
+font-size: 18px;
+
+    }
+
+    .aquatic {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px;
+      
+
+    }
+
+    .aquatic button {
+
+      background-color:#a3c585;
+      position: absolute;
+      top: 0;
+      color: rgb(10, 10, 10);
+      padding: 10px;
+      /* margin: 5px; */
+
+
+    }
+
+    .aquaticgeneral {
+      background-color:  #DCE4D9;
+    }
+
+  .acp {
+    font-size: 40px;
+  padding-left: 13%;
+  padding-top: 2%;
+  }
+
+    .aquatic-div {
+      position: relative;
+     border:#a3c585 solid 10px;
+    }
+
+    footer {
+      background-color: #393939;
+      padding: 20px 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .social-icons {
+      margin-bottom: 10px;
+    }
+    
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      font-size: 24px;
+      line-height: 1;
+      border-radius: 50%;
+      /* background-color: #77bb43; */
+      width: 40px;
+      height: 40px;
+    }
+    
+    .footerp {
+      color: #fff;
+      margin-top: 10px;
+      font-size: 14px;
+      font-style: italic;
+    }
+    
+      .social-icons a {
+        font-size: 20px;
+        width: 22px;
+        height: 22px;
+      }
+      
+      .footerp {
+        font-size: 12px;
+      }
+    
+    .headersection {
+      background-color: #F2F0EF;
+      padding: 20px;
+    }
+
+    .emailbox label {
+      background-color: #87ab69;
+      padding: 5px;
+      color: whitesmoke;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .emailbox input {
+      background-color: #DCE4D9;
+      height: 43px;
+      padding-left: 20px;
+    }
+
+    .emailbox {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+  /* CSS for mobile screens */
+
+/* CSS for tablets */
+
+/* CSS for desktop screens */
+
+/* @media screen and (min-width: 1024px) {
+  .headersection
+
+   {
+    padding: 30px;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .main-content h2 {
+    font-size: 3rem;
+  }
+
+  .main-content p {
+    font-size: 24px;
+  }
+
+  .info1-text,
+  .info2-text {
+    width: 50%;
+  }
+
+  .info1-text h4,
+  .info2-text h4 {
+    font-size: 1.5rem;
+  }
+
+  .info1-text p,
+  .info2-text p {
+    font-size: 1.2rem;
+  }
+
+  .info1,
+  .info2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,9 +319,9 @@ background-color: rgba(211, 234, 209, 0.5);
 
 #menucheck:checked ~ .popupmenu{
     /* display: block; */
-    transform: translate(125%);
+    /* transform: translate(125%);
 
-}
+} */
 #menucheck:checked ~ .popupmenu{
   /* display: block; */
   transform: translate(125%);
@@ -213,6 +457,26 @@ background-color: rgba(211, 234, 209, 0.5);
     padding-left: 130px;
 
   }
+  
+  .aquatic {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .aquatic img {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .aquatic button {
+    padding: 12px;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  } 
   @keyframes moveAndRotate {
     0% {
       transform: translateX(0) rotate(0);
@@ -233,6 +497,59 @@ background-color: rgba(211, 234, 209, 0.5);
       100% {
         transform: translateY(800px)   rotate(360deg);
       }
+  }
+  @media (min-width: 391px)
+  {
+    .infoflex 
+    {
+      display: flex;
+      gap: 20px;
+      
+    }
+    
+.info1 h4, p {
+
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 10%;
+
+}
+
+.info2 h4, p {
+
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5%;
+
+}
+
+.aquatic {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 100px;
+  background-color:  #DCE4D9;
+justify-content: center;
+align-items: center;
+}
+.aquatic-div{
+
+width: 400px;
+height: 350px;
+
+}
+.aquatic-div img {
+
+width: 100%;
+height: 100%;
+
+}
+  }
+
+
+  .headersection {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
   }
     
   .subul{
@@ -525,10 +842,8 @@ background-color: rgba(211, 234, 209, 0.5);
   white-space: nowrap;
   padding-left: 20px;
   margin-top: 30px;
-  
-
-
 }
+
 .contentbar{
   display: flex;
   gap: 10px;
