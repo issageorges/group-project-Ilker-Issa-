@@ -25,7 +25,7 @@ body{
     /* position: absolute; */
     /* align-self: center; */
     /* left: 18px; */
-    font-size: 2.5rem;
+    font-size: 32px;
     font-weight: bolder;
     /* color: #ebf3eb; */
     color: #000000;
@@ -42,7 +42,7 @@ body{
 
   .main-content p {
     color: #e9e9e9;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bolder;
     justify-content: center;
     text-align:center;
@@ -218,7 +218,7 @@ font-size: 18px;
       margin-top: 25px;
       margin-bottom: 25px;
     }
-
+/* ..................................................................... */
   /* CSS for mobile screens */
 
 /* CSS for tablets */
@@ -266,6 +266,21 @@ font-size: 18px;
     position: relative;
 }  
 
+
+
+
+
+#menucheck:checked ~ .popupmenu{
+    /* display: block; */
+    /* transform: translate(125%);
+
+} */
+/* ..........................................................commented */
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 .blankk{
   width: 100%;
   height: 75px;
@@ -297,6 +312,10 @@ background-color: rgba(211, 234, 209, 0.5);
 
 .logo img{
     overflow: hidden; 
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .search i{
@@ -315,13 +334,7 @@ background-color: rgba(211, 234, 209, 0.5);
     transition: all 0.5s ease-out;
 }
 
-
-
-#menucheck:checked ~ .popupmenu{
-    /* display: block; */
-    /* transform: translate(125%);
-
-} */
+/* .............................................................................. */
 #menucheck:checked ~ .popupmenu{
   /* display: block; */
   transform: translate(125%);
@@ -968,13 +981,14 @@ height: 100%;
 main h1{
 margin-left: 10%;
 }
- .section0{
+ /* .section0{
   display: flex;
   justify-content: center;
   
- }
+ } */
  .section0 .div1, .div2 , .div3, .div4 {
   width: 15%;
+  z-index: 55;
 }
 .section1 {
   height: 100%;
